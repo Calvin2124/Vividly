@@ -236,8 +236,11 @@ footer li > a{
 }
 
 .articleSelection article  > a {
-    padding-left: 20px;
     text-align: start;
+}
+
+.articleSelection h3, .articleSelection p{
+    padding-left: 20px;
 }
 
 .newBefore > a{
