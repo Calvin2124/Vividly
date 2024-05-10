@@ -445,6 +445,10 @@ footer li > a{
 #toggle{
     display: none;
 }
+.fa-regular{
+    cursor: pointer;
+}
+
 #toggle:checked + label .fa-regular{
     color: var(--black);
     font-weight: 700;
