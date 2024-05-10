@@ -66,6 +66,12 @@ button, .button{
     padding: 10px 16px;
     font-family: var(--inter);
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover, button:hover{
+    background: linear-gradient(198.58deg, #FFAE00 15.56%, #FF7800 100%);
+    transition: all 0.2s;
 }
 
 .container1440{
@@ -506,7 +512,6 @@ footer li > a{
 
 @keyframes showElement {
     0% { opacity: 0; }
-    /* 85% { opacity: 0.2; } */
     100% { opacity: 1; }
 }
 
@@ -516,7 +521,7 @@ footer li > a{
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 3s linear infinite;
+    animation: spin 3s linear normal;
     background-color: var(--lightOrange);
 }
 @keyframes spin {
