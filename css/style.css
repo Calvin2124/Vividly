@@ -109,6 +109,8 @@ header{
 header nav{
     position: absolute;
     right: 20px;
+    font-family: var(--roboto);
+    font-weight: 300;
 }
 
 header > a{
