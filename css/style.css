@@ -29,6 +29,8 @@ h1, h2, h3{
 }
 ::placeholder{
     color: var(--black);
+    font-size: 15px;
+    font-family: var(--inter);
 }
 
 h3{
@@ -69,10 +71,16 @@ button, .button{
     transition: all 0.2s;
 }
 
-.button:hover, button:hover{
-    background: linear-gradient(198.58deg, #FFAE00 15.56%, #FF7800 100%);
+button:hover{
+    transform:scale(1.1);
     transition: all 0.2s;
 }
+
+.button:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
 
 .container1440{
     max-width: 1440px;
@@ -140,6 +148,14 @@ footer li > a{
     line-height: 35px;
     padding: 20px;
     margin-bottom: 25px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+#location p{
+    line-height: 20px;
 }
 
 #chooseLocation{
@@ -227,11 +243,14 @@ footer li > a{
 }
 
 #choosePro h2{
-    padding: 20px 10px;
+    padding: 35px 10px 10px 10px;;
 }
 
 .articleSelection{
     margin-bottom: 30px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
 }
 
 .articleSelection article{
@@ -285,6 +304,10 @@ footer li > a{
     border-top: 1px solid var(--orange);
     padding: 10px;
     margin: 10px;
+}
+
+.recommanded p{
+    padding-left: 0;
 }
 
 .res1440{
@@ -387,6 +410,16 @@ footer li > a{
     gap: 10px;
 }
 
+#checkbox:not(:checked) + button {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#contact a:hover{
+    color: var(--lightOrange);
+    transition: 0.2s all ease;
+}
+
 @media screen and (min-width: 426px){
     #contact{
         text-align: center;
@@ -417,12 +450,26 @@ footer li > a{
 }
 
 @media screen and (min-width:1440px){
+    header nav{
+        right: 135px;
+    }
+    .arrowLeft{
+        left: 135px;
+    }
+    #mainArticle{
+        max-width: 1000px;
+        margin: auto;
+    }
     #howItWork{
         margin: 0 auto 30px;
         max-width: 990px;
     }
     .res1440{
-        margin: 0 235px;
+        min-width: 1000px;
+    }
+    #choosePro{
+        display: flex;
+        justify-content: center;
     }
     .listeHidden{
         display: flex;
